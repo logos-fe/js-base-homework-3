@@ -7,14 +7,15 @@ for(let i = 0;i<say;i++){
  alert("Кінцеве число циклу : " + say)
 
 
- //Частина 2
-  const a = 100;
-     for(let i = 0;i<=a;i+=10){
+//  //Частина 2
+
+     for(let i = 0;i<=100;i = i + 10)
+     {
      alert("Число: "+ i);
-    }
+     }
 
 
-//Частина 3
+// //Частина 3
    const b = 50;
    let z = 0;
      for(let i = 0; i<=b;i++){
@@ -25,7 +26,7 @@ for(let i = 0;i<say;i++){
      }
 
 
-//Частина 4
+// //Частина 4
 
 function fib(n) {
     let a = 1;
