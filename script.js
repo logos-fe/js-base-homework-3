@@ -47,8 +47,8 @@ for (let i = 0; i <= 100; i++) {
 }
 
 
-// **Частина 5** <br>
-// Створити цикли, який буде виводити на екран всі числа в послідовності (крок зміни лічильника) 2a-1, де початкове значення a = 2, та які менше 1000
+// // **Частина 5** <br>
+// // Створити цикли, який буде виводити на екран всі числа в послідовності (крок зміни лічильника) 2a-1, де початкове значення a = 2, та які менше 1000
 
 for (let i = 2; i < 1000; i = 2*i-1) {
     console.log(i)
@@ -85,3 +85,44 @@ if (pow != 0) {
     result = 1
 }
 alert(result)
+
+//////////////////////////////////////////////////////////
+
+let num = prompt('Число?')
+let pow = prompt('Степень?')
+let rezult = 0
+let i = 1
+if (pow < 0) {
+    rezult = 1/num
+} else {
+    rezult = num
+} 
+if (pow == 0) {
+    rezult = 1
+}
+while (i < Math.abs(pow)) {
+    if (pow > 0) {
+        rezult = rezult*num
+    } else {
+        rezult = rezult/num
+    }
+    i++
+}
+console.log(rezult)
+
+////////////////////////////////////////
+let num = prompt('Num?')
+let pow = prompt('Pow')
+
+let rezult = num
+
+function tryPow () {
+    rezult = rezult * num
+    pow--
+    if (pow > 1) {
+        tryPow()
+    }
+    return rezult
+}
+tryPow()
+alert(rezult)
