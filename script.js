@@ -12,10 +12,9 @@ for (let i = 0; i <= strToNum; i++) {
 // **Частина 2** <br>
 // Створити цикл, який буде виводити в консоль усі числа від 100 до 0, з кроком 10
 
-let num = 100
-for (let i = 0; i < num; i++) {
-    num = num - 10
-    console.log(num)
+
+for(let i = 100; i >= 0; i -= 10) {
+    console.log(i)
 }
 
 
@@ -27,9 +26,9 @@ let evenNum = 0
 for (let i = 0; i <= 50; i++) {
     if (i % 2 == 0) {
         evenNum = evenNum + i
-        console.log(evenNum)
     }
 }
+console.log(evenNum)
 
 
 // **Частина 4** <br>
@@ -65,64 +64,64 @@ for (let i = 2; i < 1000; i = 2*i-1) {
 // 3. Створити цикл, який буде підносити число до степеня (!Цикл повинен бути тільки один)
 // 4. Степінь може бути 0, може бути від`ємним, це потрібно врахувати, обрахувати всі можливі варіанти
 
-let num = prompt('Число?')
-let pow = prompt('Степень?')
-let result = 0
-if (pow >= 0) {
-    result = num
+let number = prompt('Число?')
+let pow1 = prompt('Степень?')
+let result3 = 0
+if (pow1 >= 0) {
+    result3 = number
 } else {
-    result = 1/num
+    result3 = 1/number
 }
-if (pow != 0) {
-    for (let index = 1; index < Math.abs(pow); index++) {
-        if (pow > 0) {
-            result = result * num
-        } else if (pow < 0) {
-            result = result / num
+if (pow1 != 0) {
+    for (let index = 1; index < Math.abs(pow1); index++) {
+        if (pow1 > 0) {
+            result3 = result3 * number
+        } else if (pow1 < 0) {
+            result3 = result3 / number
         } 
     }
-} else if (pow == 0) {
-    result = 1
+} else if (pow1 == 0) {
+    result3 = 1
 }
-alert(result)
+alert('result1: ' + result3)
 
 //////////////////////////////////////////////////////////
 
-let num = prompt('Число?')
-let pow = prompt('Степень?')
-let rezult = 0
+let num1 = prompt('Число?')
+let pow2 = prompt('Степень?')
+let rezult2 = 0
 let i = 1
-if (pow < 0) {
-    rezult = 1/num
+if (pow2 < 0) {
+    rezult2 = 1/num1
 } else {
-    rezult = num
+    rezult2 = num1
 } 
-if (pow == 0) {
-    rezult = 1
+if (pow2 == 0) {
+    rezult2 = 1
 }
-while (i < Math.abs(pow)) {
-    if (pow > 0) {
-        rezult = rezult*num
+while (i < Math.abs(pow2)) {
+    if (pow2 > 0) {
+        rezult2 = rezult2*num1
     } else {
-        rezult = rezult/num
+        rezult2 = rezult2/num1
     }
     i++
 }
-console.log(rezult)
+alert('result2: ' + rezult2)
 
 ////////////////////////////////////////
-let num = prompt('Num?')
-let pow = prompt('Pow')
+// let num2 = prompt('Num?')
+// let pow3 = prompt('Pow')
 
-let rezult = num
+// let rezult1 = num2
 
-function tryPow () {
-    rezult = rezult * num
-    pow--
-    if (pow > 1) {
-        tryPow()
-    }
-    return rezult
-}
-tryPow()
-alert(rezult)
+// function tryPow () {
+//     rezult1 = rezult1 * num2
+//     pow3--
+//     if (pow3 > 1) {
+//         tryPow()
+//     }
+//     return rezult1
+// }
+// tryPow()
+// alert(rezult1)
