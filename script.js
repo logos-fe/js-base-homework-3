@@ -40,14 +40,14 @@ for (let i = 2; i < 1000; i = 2*i-1) {
 
 // Task 6
 
-let n1 = 0
-let n2 = 1
-for (let i = 1; i <= 20; i++) {
-	let result = n1 + n2
-	n1=n2
-	n2 = result
-	console.log(result)
-}
+// let n1 = 0
+// let n2 = 1
+// for (let i = 1; i <= 20; i++) {
+// 	let result = n1 + n2
+// 	n1=n2
+// 	n2 = result
+// 	console.log(result)
+// }
 
 
 let d = prompt('Яке число підносим до степені?');
