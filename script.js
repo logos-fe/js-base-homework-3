@@ -9,7 +9,7 @@ for(let i = 0;i<say;i++){
 
 //  //Частина 2
 
-     for(let i = 0;i<=100;i = i + 10)
+     for(let i = 100;i>=0;i-=10)
      {
      alert("Число: "+ i);
      }
@@ -49,19 +49,17 @@ function fib(n) {
 //Частина 5 
 
  let a = 2
- for(let i = 0;i<=100;i += (2*a-1)){
+ for(let i = 2;i<=100;i = 2*i-1){
        alert("Число: " + i);
  }
 
 //Частина 6
 let number = prompt("Введіть число: ")
 let sine = prompt("Введіть степінь: ")
-for(let i = 1;i<=1;i=i+1){
-    if(sine<0){
-        number = number / (-sine) 
-        alert("Коли від'ємна степінь: " +number)
-        break
-    }
-    number=number**sine
-    alert("Стандарт: " + number)
+let result = 1
+for(let i = 0;i<sine;i++){
+    result *= number
 }
+alert("Число в степені: " + result)
+
+
